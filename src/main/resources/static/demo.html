@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue/vue.min.js"></script>
+    <script src="js/demo.js"></script>
+    <script>
+        window.onload = function () {
+            var vm = new Vue({
+                el: '#app',
+                data: {
+                    message: 'xxx'
+                }
+            })
+        }
+    </script>
+</head>
+<body>
+<div id="app">
+    <p>{{message}}</p>
+</div>
+
+</body>
+</html>

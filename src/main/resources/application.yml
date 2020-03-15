@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    username: root
+    password: 1234
+    url: jdbc:mysql://lmaster:3306/lpan?Unicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  security:
+    user:
+      name: admin
+      password: admin
+  application:
+    name: lpan
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.lzw.lpan.model
+spring.main.allow-bean-definition-overriding: true
+
+server:
+  port: 80
+
+
